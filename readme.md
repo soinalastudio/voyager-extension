@@ -29,12 +29,12 @@ New custom fields:
 > #### Requirement
 > Laravel: v8+ or v9+  
 > Voyager: v1.6+  
-> You should fully install the package [Voyager](https://github.com/the-control-group/voyager) before.
+> You should fully install the package [Voyager](https://github.com/soinalastudio/voyager) before.
 
 Via Composer
 
 ``` bash
-$ composer require monstrex/voyager-extension
+$ composer require soinalastudio/voyager-extension
 ```
 
 Then run migrations:
