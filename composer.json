@@ -1,6 +1,6 @@
 {
-     "name": "monstrex/voyager-extension",
-     "description": "Voyager Admin Panel Extension",
+     "name": "soinalastudio/voyager-extension",
+     "description": "Voyager Admin Panel Extension (Fork)",
      "license": "MIT",
      "authors": [
        {
@@ -17,7 +17,7 @@
        "admin"
      ],
     "require": {
-        "tcg/voyager": "^1.6.0",
+        "soinalastudio/voyager": "^1.7.0",
         "spatie/laravel-medialibrary": "^10.0.0",
         "illuminate/support": "~9.0|~10.0",
         "ext-json": "*"
@@ -29,18 +29,18 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "MonstreX\\VoyagerExtension\\": "src/"
+            "SoinalaStudio\\VoyagerExtension\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MonstreX\\VoyagerExtension\\Tests\\": "tests"
+            "SoinalaStudio\\VoyagerExtension\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "MonstreX\\VoyagerExtension\\VoyagerExtensionServiceProvider"
+                "SoinalaStudio\\VoyagerExtension\\VoyagerExtensionServiceProvider"
             ]
         }
     }

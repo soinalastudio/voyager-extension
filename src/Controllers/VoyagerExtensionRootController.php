@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension\Controllers;
+namespace SoinalaStudio\VoyagerExtension\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;

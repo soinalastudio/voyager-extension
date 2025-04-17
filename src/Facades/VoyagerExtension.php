@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension\Facades;
+namespace SoinalaStudio\VoyagerExtension\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

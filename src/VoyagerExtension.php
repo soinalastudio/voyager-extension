@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension;
+namespace SoinalaStudio\VoyagerExtension;
 
 class VoyagerExtension
 {

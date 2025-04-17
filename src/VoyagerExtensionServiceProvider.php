@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension;
+namespace SoinalaStudio\VoyagerExtension;
 
 use Illuminate\Events\Dispatcher;
 use Illuminate\Support\Facades\View;
@@ -10,22 +10,22 @@ use Illuminate\Foundation\AliasLoader;
 use Config;
 use Lang;
 
-use MonstreX\VoyagerExtension\Generators\MediaLibraryPathGenerator;
-use MonstreX\VoyagerExtension\Generators\MediaLibraryUrlGenerator;
+use SoinalaStudio\VoyagerExtension\Generators\MediaLibraryPathGenerator;
+use SoinalaStudio\VoyagerExtension\Generators\MediaLibraryUrlGenerator;
 use TCG\Voyager\Facades\Voyager;
 
-use MonstreX\VoyagerExtension\FormFields\AdvImageFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvMediaFilesFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvSelectDropdownTreeFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvFieldsGroupFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvInlineSetFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvJsonFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvRelatedFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvPageLayoutFormField;
+use SoinalaStudio\VoyagerExtension\FormFields\AdvImageFormField;
+use SoinalaStudio\VoyagerExtension\FormFields\AdvMediaFilesFormField;
+use SoinalaStudio\VoyagerExtension\FormFields\AdvSelectDropdownTreeFormField;
+use SoinalaStudio\VoyagerExtension\FormFields\AdvFieldsGroupFormField;
+use SoinalaStudio\VoyagerExtension\FormFields\AdvInlineSetFormField;
+use SoinalaStudio\VoyagerExtension\FormFields\AdvJsonFormField;
+use SoinalaStudio\VoyagerExtension\FormFields\AdvRelatedFormField;
+use SoinalaStudio\VoyagerExtension\FormFields\AdvPageLayoutFormField;
 
-use MonstreX\VoyagerExtension\Actions\CloneAction;
+use SoinalaStudio\VoyagerExtension\Actions\CloneAction;
 
-use MonstreX\VoyagerExtension\Facades;
+use SoinalaStudio\VoyagerExtension\Facades;
 
 
 class VoyagerExtensionServiceProvider extends ServiceProvider
@@ -50,12 +50,12 @@ class VoyagerExtensionServiceProvider extends ServiceProvider
         if (!config('voyager-extension.legacy_bread_list')) {
             $this->app->bind(
                 'TCG\Voyager\Models\DataType',
-                'MonstreX\VoyagerExtension\Models\DataType'
+                'SoinalaStudio\VoyagerExtension\Models\DataType'
             );
         }
 
         $voyagerNamespace = config('voyager.controllers.namespace');
-        $VENamespace = 'MonstreX\VoyagerExtension\Controllers';
+        $VENamespace = 'SoinalaStudio\VoyagerExtension\Controllers';
 
         $VEControllers = [
             ['VoyagerController', 'VoyagerExtensionRootController'],
@@ -264,8 +264,8 @@ class VoyagerExtensionServiceProvider extends ServiceProvider
      */
     public function addRoutes($router){
 
-        $extensionController = '\MonstreX\VoyagerExtension\Controllers\VoyagerExtensionController';
-        $extensionVoyagerController = '\MonstreX\VoyagerExtension\Controllers\VoyagerExtensionBaseController';
+        $extensionController = '\SoinalaStudio\VoyagerExtension\Controllers\VoyagerExtensionController';
+        $extensionVoyagerController = '\SoinalaStudio\VoyagerExtension\Controllers\VoyagerExtensionBaseController';
 
         try {
 

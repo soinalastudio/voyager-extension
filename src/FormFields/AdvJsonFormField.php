@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension\FormFields;
+namespace SoinalaStudio\VoyagerExtension\FormFields;
 
 use TCG\Voyager\FormFields\AbstractHandler;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension\Models;
+namespace SoinalaStudio\VoyagerExtension\Models;
 
 use TCG\Voyager\Models\DataType as VoyagerDataType;
 

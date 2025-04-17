@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension\ContentTypes;
+namespace SoinalaStudio\VoyagerExtension\ContentTypes;
 
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Http\Controllers\ContentTypes\BaseType;

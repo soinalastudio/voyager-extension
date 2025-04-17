@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension\ContentTypes;
+namespace SoinalaStudio\VoyagerExtension\ContentTypes;
 
 use phpDocumentor\Reflection\Types\Integer;
 use TCG\Voyager\Facades\Voyager;

@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension\Actions;
+namespace SoinalaStudio\VoyagerExtension\Actions;
 
 use TCG\Voyager\Actions\AbstractAction;
 

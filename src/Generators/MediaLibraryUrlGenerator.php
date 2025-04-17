@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension\Generators;
+namespace SoinalaStudio\VoyagerExtension\Generators;
 
 use Spatie\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator;
 use Str;

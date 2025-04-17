@@ -1,4 +1,6 @@
 # Voyager Extension
+THIS IS A FORK OF VOYAGER EXTENSION (https://github.com/SoinalaStudio/voyager-extension, abandonned on 3 Mar 2025)
+
 The package extends the original [Voyager Admin Panel](https://github.com/the-control-group/voyager) with some new advantages and features.
 
 ## Features
@@ -43,7 +45,7 @@ $ php artisan migrate
 
 Publish config if you need:
 ```
-$ php artisan vendor:publish --provider="MonstreX\VoyagerExtension\VoyagerExtensionServiceProvider" --tag="config"
+$ php artisan vendor:publish --provider="SoinalaStudio\VoyagerExtension\VoyagerExtensionServiceProvider" --tag="config"
 ```
 
 To use Image fields you need publish and migrate [laravel-medialibrary](https://docs.spatie.be/laravel-medialibrary/) resources
@@ -105,8 +107,8 @@ Configure
 
 /*
 | You can enable or disable the custom path and urls generator for medialibrary images
-| at MonstreX\VoyagerExtension\Generators\MediaLibraryPathGenerator
-| and at MonstreX\VoyagerExtension\Generators\MediaLibraryUrlGenerator
+| at SoinalaStudio\VoyagerExtension\Generators\MediaLibraryPathGenerator
+| and at SoinalaStudio\VoyagerExtension\Generators\MediaLibraryUrlGenerator
 */
 'use_media_path_generator' => true,
 'use_media_url_generator' => true,
@@ -509,7 +511,7 @@ Each field also can have additional common options:
 Prepare your model and add *InlineSetTrait* trait:
 ```php
 ...
-use MonstreX\VoyagerExtension\Traits\InlineSetTrait;
+use SoinalaStudio\VoyagerExtension\Traits\InlineSetTrait;
 ...
 class Page extends Model
 {
@@ -531,7 +533,7 @@ Also, the trait is necessary to remove related sources data in corresponding tab
 
 >### Field: VE Page Layout
 
-The special content field type. Available only if [Voyager Site](https://github.com/MonstreX/voyager-site) package is installed.
+The special content field type. Available only if [Voyager Site](https://github.com/SoinalaStudio/voyager-site) package is installed.
 Provides a subsystem to organize the layout of content fields, blocks, and forms on a page.
 
 ![VE Page Layout](/docs/images/page-layout.png)
@@ -542,8 +544,8 @@ BREAD Json Option for this field:
     "layout_fields": {
         "content": "Content"
     },
-    "block_model": "MonstreX\\VoyagerSite\\Models\\Block",
-    "form_model": "MonstreX\\VoyagerSite\\Models\\Form",
+    "block_model": "SoinalaStudio\\VoyagerSite\\Models\\Block",
+    "form_model": "SoinalaStudio\\VoyagerSite\\Models\\Form",
     "style_classes": "col-md-3"
 }
 ```
